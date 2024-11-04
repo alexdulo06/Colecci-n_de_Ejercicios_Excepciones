@@ -1,0 +1,6 @@
+Descripción
+Se implementan dos versiones de una función de división:
+una que devuelve un valor de error (por ejemplo, -1) y otra que lanza una excepción (std::invalid_argument) si hay un error (división por cero). 
+El main demuestra el uso de ambas versiones y muestra cómo se manejan los errores. Resultado: El programa imprime "Error:
+división por cero." 
+para la versión que devuelve un valor de error, y "Excepción: División por cero" para la versión que lanza una excepción.
