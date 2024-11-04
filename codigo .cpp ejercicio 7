@@ -1,0 +1,36 @@
+
+class ArchivoSeguro {
+private:
+    std::ofstream archivo;
+public:
+    ArchivoSeguro(const std::string& nombre) {
+        archivo.open(nombre);
+        if (!archivo.is_open()) {
+            throw std::runtime_error("No se pudo abrir el archivo");
+        }
+    }
+
+    ~ArchivoSeguro() {
+        if (archivo.is_open()) {
+            archivo.close();
+            std::cout << "Archivo cerrado correctamente." << std::endl;
+        }
+    }
+
+    void escribir(const std::string& texto) {
+        if (!archivo.is_open()) {
+            throw std::runtime_error("No se puede escribir en un archivo cerrado");
+        }
+        archivo << texto;
+    }
+};
+
+int main() {
+    try {
+        ArchivoSeguro archivo("archivo.txt");
+        archivo.escribir("Hola, mundo!");
+    } catch (const std::runtime_error& e) {
+        std::cout << "Excepción capturada: " << e.what() << std::endl;
+    }
+    return 0;
+}
