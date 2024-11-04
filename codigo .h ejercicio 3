@@ -1,0 +1,11 @@
+#ifndef FUNCIONES_H
+#define FUNCIONES_H
+
+#include <stdexcept>
+
+// Declaración de las funciones que propagan la excepción
+void func3();
+void func2();
+void func1();
+
+#endif // FUNCIONES_H
