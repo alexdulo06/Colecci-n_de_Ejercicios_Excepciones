@@ -1,0 +1,5 @@
+Descripción: 
+El programa lanza una excepción desde una función, pero no la captura en ningún bloque catch. 
+Esto demuestra el comportamiento cuando una excepción no es manejada. 
+Resultado esperado: Al ejecutar el programa, se imprime un mensaje de error por parte del sistema, indicando que hubo una excepción no capturada y que el programa terminó abruptamente. 
+Dependiendo del entorno, puede mostrar un mensaje como "terminating with uncaught exception" seguido de detalles.
