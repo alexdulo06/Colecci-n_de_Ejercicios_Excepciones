@@ -1,0 +1,3 @@
+Descripción:
+El programa tiene una serie de funciones (func1, func2, func3), donde func3 lanza una excepción que se propaga a través de func2 y func1 hasta main, donde finalmente se captura y maneja. Resultado esperado: 
+Al ejecutar el programa, se imprime "Excepción capturada en main: Error en func3." Esto demuestra cómo las excepciones pueden propagarse y ser capturadas en niveles superiores de la llamada de funciones.
