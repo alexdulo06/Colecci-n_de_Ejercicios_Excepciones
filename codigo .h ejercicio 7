@@ -1,0 +1,23 @@
+#include "ArchivoSeguro.h"
+#include <iostream>
+
+ArchivoSeguro::ArchivoSeguro(const std::string& nombre) {
+    archivo.open(nombre);
+    if (!archivo.is_open()) {
+        throw std::runtime_error("No se pudo abrir el archivo");
+    }
+}
+
+ArchivoSeguro::~ArchivoSeguro() {
+    if (archivo.is_open()) {
+        archivo.close();
+        std::cout << "Archivo cerrado correctamente." << std::endl;
+    }
+}
+
+void ArchivoSeguro::escribir(const std::string& texto) {
+    if (!archivo.is_open()) {
+        throw std::runtime_error("No se puede escribir en un archivo cerrado");
+    }
+    archivo << texto;
+}
