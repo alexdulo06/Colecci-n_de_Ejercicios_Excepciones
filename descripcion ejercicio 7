@@ -1,0 +1,8 @@
+Descripción:
+Se implementa una clase llamada ArchivoSeguro que adquiere un recurso (abre un archivo) en su constructor y lo libera (cierra el archivo) en su destructor.
+La función escribir intenta escribir en el archivo y lanza una excepción si el archivo no está abierto. 
+El programa principal demuestra que, incluso si se lanza una excepción, el recurso (archivo) se libera correctamente. 
+Resultado:
+Al ejecutar el programa, si se simula el error cerrando el archivo antes de escribir, se imprime "Excepción capturada: No se puede escribir en un archivo cerrado."
+y se muestra un mensaje indicando que el archivo se ha cerrado correctamente.
+Esto verifica el uso del patrón RAII (Resource Acquisition Is Initialization), asegurando la gestión adecuada de recursos.
