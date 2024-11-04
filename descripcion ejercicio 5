@@ -1,0 +1,6 @@
+Descripción:
+Este ejercicio muestra cómo se captura una excepción en un bloque catch, se maneja parcialmente (por ejemplo, imprimiendo un mensaje) y luego se relanza la misma excepción para que sea capturada por un manejador más externo. 
+Resultado esperado: Al ejecutar el programa, se imprimen dos mensajes: 
+"Excepción capturada y manejada. Reactivando..." y luego "Excepción reactivada capturada: 
+Error en la función lanzaExcepcion." 
+Esto muestra la capacidad de reactivar una excepción para que otros manejadores la capturen.
