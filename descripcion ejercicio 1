@@ -1,0 +1,8 @@
+EJERCICIO 1
+Descripción
+El programa simula un sistema con banderas de error en lugar de usar excepciones. 
+La función divide establece una bandera errorFlag si ocurre un error (división por cero) en lugar de lanzar una excepción. 
+En el main, la bandera se comprueba y se maneja el error si está activa.
+Al ejecutar el programa, se imprime un mensaje de error: "Ocurrió un error: división por cero."
+
+
