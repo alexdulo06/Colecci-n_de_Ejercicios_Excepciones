@@ -1,0 +1,5 @@
+Descripción: 
+El ejercicio introduce una clase de excepción personalizada llamada MiExcepcion, que hereda de std::exception y contiene un mensaje personalizado. 
+Se lanza esta excepción desde una función y se captura en el main. 
+Resultado esperado: Al ejecutar el programa, se imprime "Excepción capturada: Ocurrió un error en la función lanzaExcepcion." 
+Esto demuestra cómo se pueden definir y usar excepciones personalizadas para un manejo más detallado de errores.
