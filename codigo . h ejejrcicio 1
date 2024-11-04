@@ -1,0 +1,7 @@
+#ifndef FUNCIONES_H
+#define FUNCIONES_H
+
+// Declaración de la función divide
+int divide(int a, int b);
+
+#endif // FUNCIONES_H
