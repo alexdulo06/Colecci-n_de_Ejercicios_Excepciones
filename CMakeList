@@ -1,0 +1,24 @@
+cmake_minimum_required(VERSION 3.29)
+project(Coleccion_de_Ejercicios_Excepciones)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+
+add_executable(Coleccion_de_Ejercicios_Excepciones
+        parte1/banderas_error.cpp
+        parte1/banderas_error.h
+        main.h
+        main.cpp
+        parte2/parte2.h
+        parte2/parte2.cpp
+        parte3/ejercicio3.h
+        parte3/ejercicio3.cpp
+        parte4/ejercicio4.h
+        parte4/ejercicio4.cpp
+        parte5/ejercicio5.cpp
+        parte6/ejercicio6.h
+        parte6/ejercicio6.cpp
+        parte7/ejercicio7.cpp
+        parte7/ejercicio7.h
+        parte5/ejercicio5.h)
